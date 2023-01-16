@@ -1,0 +1,5 @@
+frompymongo import MongoClient 
+url = mongodb+srv://admin:<password>@cluster0.jsixupg.mongodb.net/?retryWrites=true&w=majority
+client = MongoClient(mongodb+srv://admin:<password>@cluster0.jsixupg.mongodb.net/?retryWrites=true&w=majority)
+db = client.pytech
+print(db.list_collections_names)
